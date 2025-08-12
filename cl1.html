@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="C:\html\clacluter\cl1.css">
+    <style>
+
+    .main{
+        width: 300px;
+        height: 550px;
+        border: 2px solid black;
+        margin: auto;
+        margin-top: 40px;
+        background-color: black;
+
+    }
+
+    .main .screen{
+        width: 280px;
+        height: 80px;
+        border: 2px solid rgb(243, 226, 226);
+        margin: auto;
+        margin-top: 30px;
+        background-color: white;
+        font-size: 60px;
+        text-align: right;
+    }
+
+    .main  .number{
+        width: 260px;
+        height: 350px;
+        border: 2px solid rgb(219, 210, 210);
+        margin: auto;
+        margin-top: 50px;
+        display: block;
+        display: grid;
+        grid-template-columns: repeat(5,40px);
+        gap: 10px;
+        padding: 10px;
+        color: white;
+    }
+
+    .main .number .nm{
+        height: 60px;
+        border: 2px solid blue;
+        position: relative;
+        left: 10px;
+        top: 5px;
+        text-align: center;
+        justify-items: center;
+        
+     
+
+    }
+    #n14{
+
+
+     grid-row: span 2 ;  
+     height: 155px;   
+    }
+
+    
+</style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="screen" id="sc"></div>
+        <div class="number">
+         <din class="nm" id="n1"><button>7</button></din>
+         <din class="nm" id="n2"><button>8</button></din>
+         <din class="nm" id="n3"><button>9</button></din>
+         <din class="nm" id="n4"><button>/</button></din>
+         <din class="nm" id="n5"><button>A/C</button></din>
+         <din class="nm" id="n6"><button>4</button></din>
+         <din class="nm" id="n7"><button>5</button></din>
+         <din class="nm" id="n8"><button>6</button></din>
+         <din class="nm" id="n9"><button>*</button></din>
+         <din class="nm" id="n10"><button>%</button></din>
+         <din class="nm" id="n11"><button>1</button></din>
+         <din class="nm" id="n12"><button>2</button></din>
+         <din class="nm" id="n13"><button>3</button></din>
+         <din class="nm" id="n14"><button>+</button></din>
+         <din class="nm" id="n15"><button>-</button></din>
+         <din class="nm" id="n16"><button>0</button></din>
+         <din class="nm" id="n17"><button>00</button></din>
+         <din class="nm" id="n18"><button>.</button></din>
+         <din class="nm" id="n19"><button>=</button></din>
+        </div>
+    </div>
+    <script>
+
+
+
+
+
+
+        let scr=document.getElementById("sc");
+        scr.innerText=0;
+        
+
+
+        let var1=0;
+        var1=scr.innerText;
+        console.log()
+
+
+        let b1=document.getElementById("n11");
+
+        b1.addEventListener("click",function(){
+            if(scr.innerText == 0)
+        {
+            scr.innerText=1;
+        }
+        else{
+
+            scr.append('1');
+        }
+
+
+
+
+           
+            console.log(scr.innerText);
+        })
+
+        let b2=document.getElementById("n12");
+
+        b2.addEventListener("click",function(){
+            
+
+            if(scr.innerText == 0)
+        {
+            scr.innerText=2;
+        }
+        else{
+
+            scr.append(2);
+        }
+
+           
+            console.log(scr.innerText);
+        })
+
+let b3=document.getElementById("n13");
+
+        b3.addEventListener("click",function(){
+            if(scr.innerText == 0)
+        {
+            scr.innerText=3;
+        }
+        else{
+
+            scr.append(3);
+        }
+           
+            console.log(scr.innerText);
+        })
+
+let b4=document.getElementById("n6");
+
+        b4.addEventListener("click",function(){
+             if(scr.innerText == 0)
+        {
+            scr.innerText=4;
+        }
+        else{
+
+            scr.append(4);
+        }
+
+           
+            console.log(scr.innerText);
+        })
+
+let b5=document.getElementById("n7");
+
+        b5.addEventListener("click",function(){
+             if(scr.innerText == 0)
+        {
+            scr.innerText=5;
+        }
+        else{
+
+            scr.append(5);
+        }
+           
+            console.log(scr.innerText);
+        })
+
+let b6=document.getElementById("n8");
+
+        b6.addEventListener("click",function(){
+           if(scr.innerText == 0)
+        {
+            scr.innerText=6;
+        }
+        else{
+
+            scr.append(6);
+        }
+
+           
+            console.log(scr.innerText);
+        })
+
+let b7=document.getElementById("n1");
+
+        b7.addEventListener("click",function(){
+             if(scr.innerText == 0)
+        {
+            scr.innerText=7;
+        }
+        else{
+
+            scr.append(7);
+        }
+           
+            console.log(scr.innerText);
+        })
+
+let b8=document.getElementById("n2");
+
+        b8.addEventListener("click",function(){
+            if(scr.innerText == 0)
+        {
+            scr.innerText=8;
+        }
+        else{
+
+            scr.append(8);
+        }
+
+           
+            console.log(scr.innerText);
+        })
+
+let b9=document.getElementById("n3");
+
+        b9.addEventListener("click",function(){
+            if(scr.innerText == 0)
+        {
+            scr.innerText=9;
+        }
+        else{
+
+            scr.append(9);
+        }
+           
+            console.log(scr.innerText);
+        })
+
+        let b16=document.getElementById("n16");
+
+        b16.addEventListener("click",function(){
+            if(scr.innerText == 0)
+        {
+            
+        }
+        else{
+
+            scr.append(0);
+        }
+            console.log(scr.innerText);
+        })
+
+         let b17=document.getElementById("n17");
+
+        b17.addEventListener("click",function(){
+           scr.append(0);
+           
+            console.log(scr.innerText);
+        })
+        let point=0;
+         let b18=document.getElementById("n18");
+
+        b18.addEventListener("click",function(){
+            if(point==0)
+        {
+           scr.append('.');
+        } 
+        point++; 
+            console.log(scr.innerText);
+        })
+
+
+         let b19=document.getElementById("n19");
+
+        b19.addEventListener("click",function(){
+          var1=scr.innerText;
+          if(sin==1)
+          {
+          sum=Number(var1)+Number(sum);
+         
+          }
+          else if(sin==2)
+          {
+            sum=Number(sum)-Number(var1);
+            
+          }
+          else if(sin==3)
+          {
+            sum=Number(sum)*Number(var1);
+          }
+          else if(sin==4)
+          {
+            sum=Number(sum)/Number(var1);
+          }
+          scr.innerText=sum;
+           console.log(sum);
+           sum=0;
+          sin=23;
+        })
+        let sum=0;
+        let sin;
+let ver1;
+         let b14=document.getElementById("n14");
+
+        b14.addEventListener("click",function(){
+            console.log(scr.innerText)
+             var1=scr.innerText;
+            console.log(var1)
+            sum=Number(var1)+Number(sum);
+            console.log(sum);
+            scr.append('+');
+            scr.innerText=0;
+            var1=0;
+            sin=1;
+            
+        })
+
+        let b15=document.getElementById("n15");
+
+        b15.addEventListener("click",function(){
+            console.log(scr.innerText)
+            var1=scr.innerText;
+            sum=Number(var1)-Number(sum);
+            sin=2;
+            scr.innerText=0;
+            
+        })
+
+        
+        let b91=document.getElementById("n9");
+
+        b91.addEventListener("click",function(){
+            
+            var1=scr.innerText;
+            if(sum==0)
+        {
+            sum=1*Number(var1);
+        
+
+        }
+        else
+        {
+            sum=Number(sum)*number(var1);
+        }
+    scr.innerText=0;
+
+        sin=3;
+            
+        })
+
+      let b41=document.getElementById("n4");
+
+        b41.addEventListener("click",function(){
+           var1=scr.innerText;
+           if(sum==0)
+           {
+            sum=Number(var1)/1;
+           }
+           else{
+            sum=Number(sum)/Number(var1);
+           }
+
+           scr.innerText=0;
+           sin=4;
+            
+        })
+
+        
+
+
+
+
+
+
+         let b=document.getElementById("n5");
+
+        b.addEventListener("click",function(){
+            location.reload();
+
+        
+          
+        })
+
+        
+
+
+
+
+
+    </script>
+</body>
+</html>
